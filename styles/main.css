@@ -17,7 +17,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 64rem;
+    max-width: 64 rem;
 }
 
 .navbar {
@@ -28,4 +28,14 @@ body {
 .navbar .logo {
     position: relative;
     left: 2rem;
+}
+
+.clearfix::before,
+.clearfix::after {
+   content: " ";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
 }
